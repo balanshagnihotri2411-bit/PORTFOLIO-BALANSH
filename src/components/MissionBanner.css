@@ -1,0 +1,67 @@
+.mission {
+  padding: 0 clamp(1.5rem, 4vw, 3.5rem) clamp(2rem, 4vw, 3.5rem);
+}
+
+.mission__inner {
+  background: var(--accent-teal);
+  border-radius: var(--radius-xl);
+  padding: clamp(2.5rem, 5vw, 4rem) clamp(2rem, 5vw, 4rem);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.mission__text {
+  font-size: clamp(1.35rem, 2.5vw, 2rem);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.35;
+  color: #ffffff;
+  max-width: 900px;
+  letter-spacing: -0.02em;
+}
+
+.mission__divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+  width: 100%;
+}
+
+.mission__stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem 2rem;
+  align-items: center;
+}
+
+.mission__stack-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: rgba(255, 255, 255, 0.7);
+  transition: color var(--transition-fast);
+  cursor: default;
+}
+
+.mission__stack-item:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.mission__stack-label {
+  font-size: 0.85rem;
+  font-weight: var(--font-weight-semibold);
+}
+
+@media (max-width: 600px) {
+  .mission__stack {
+    gap: 1rem 1.25rem;
+  }
+
+  .mission__stack-label {
+    display: none;
+  }
+
+  .mission__stack-item {
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+}

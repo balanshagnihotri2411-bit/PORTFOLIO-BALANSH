@@ -1,0 +1,140 @@
+.work {
+  padding: clamp(2.5rem, 5vw, 4.5rem) clamp(1.5rem, 4vw, 3.5rem);
+}
+
+.work__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.work__header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.work__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+/* ── Project Card Shared ── */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+}
+
+.project-card__image-wrap {
+  position: relative;
+  overflow: cover ;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+.project-card--featured .project-card__image-wrap {
+  aspect-ratio: 16 / 7;
+}
+
+.project-card--small .project-card__image-wrap {
+  aspect-ratio: 16 / 10;
+}
+
+.project-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.45s ease-out;
+}
+
+.project-card:hover .project-card__image {
+  transform: scale(1.04);
+}
+
+/* Placeholder for portfolio project */
+.project-card__image-placeholder {
+  width: 100%;
+  height: 100%;
+  min-height: 200px;
+  background: var(--gradient-lavender);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-card__placeholder-text {
+  font-size: 1.25rem;
+  font-weight: var(--font-weight-bold);
+  color: rgba(50, 50, 130, 0.6);
+  letter-spacing: -0.01em;
+}
+
+/* Hover overlay */
+.project-card__overlay {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity var(--transition-base);
+  color: var(--text-primary);
+}
+
+.project-card:hover .project-card__overlay {
+  opacity: 1;
+}
+
+/* Meta row */
+.project-card__meta {
+  padding: 1rem 1.25rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  background: var(--bg-card);
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+}
+
+.project-card__meta-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-card__category {
+  color: var(--text-muted);
+  font-size: 0.65rem;
+}
+
+.project-card__year {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: var(--font-weight-medium);
+}
+
+.project-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+/* ── Responsive ── */
+@media (max-width: 700px) {
+  .work__grid {
+    grid-template-columns: 1fr;
+  }
+}

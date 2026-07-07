@@ -1,0 +1,69 @@
+/* =====================================================
+   DESIGN TOKENS — Portfolio Design System
+   ===================================================== */
+:root {
+  /* ── Backgrounds ── */
+  --bg-page: #e8e8e8;
+  --bg-panel: #f2f2f2;
+  --bg-card: #ffffff;
+  --bg-card-soft: #fafafa;
+
+  /* ── Text ── */
+  --text-primary: #1a1a1a;
+  --text-secondary: #6b6b6b;
+  --text-muted: #a0a0a0;
+
+  /* ── Accent: Teal ── */
+  --accent-teal: #12939a;
+  --accent-teal-dark: #0d747a;
+  --accent-teal-light: #dcf2f0;
+  --accent-teal-text: #0f7a80;
+
+  /* ── Gradient: Lavender ── */
+  --gradient-lavender: linear-gradient(135deg, #ffffff 0%, #d8d9fb 50%, #9b9cf0 100%);
+  --gradient-lavender-soft: linear-gradient(135deg, #f5f5ff 0%, #e0e1fd 60%, #b8b9f5 100%);
+
+  /* ── Buttons ── */
+  --btn-black: #1a1a1a;
+  --btn-black-hover: #303030;
+  --btn-text: #ffffff;
+
+  /* ── Shadows ── */
+  --shadow-soft: 0 20px 60px rgba(0, 0, 0, 0.08);
+  --shadow-card: 0 8px 24px rgba(0, 0, 0, 0.06);
+  --shadow-card-hover: 0 20px 48px rgba(0, 0, 0, 0.12);
+  --shadow-header: 0 4px 20px rgba(0, 0, 0, 0.08);
+
+  /* ── Radii ── */
+  --radius-xl: 40px;
+  --radius-lg: 28px;
+  --radius-md: 18px;
+  --radius-sm: 12px;
+  --radius-pill: 999px;
+
+  /* ── Spacing scale ── */
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+
+  /* ── Typography ── */
+  --font-sans: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /* ── Transitions ── */
+  --transition-fast: 150ms ease-out;
+  --transition-base: 250ms ease-out;
+  --transition-slow: 350ms ease-out;
+
+  /* ── Layout ── */
+  --site-max-width: 1440px;
+  --section-padding: clamp(2.5rem, 5vw, 5rem);
+}

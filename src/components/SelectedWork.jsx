@@ -2,7 +2,7 @@ import { motion, useReducedMotion } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
 import ProjectCard from './ProjectCard';
 import notesImg from '../assets/images/project-notes.png';
-import dashboardImg from '../assets/images/project-dashboard.png';
+import rootsImg from '../assets/images/roots.png';
 import './SelectedWork.css';
 
 const projects = [
@@ -14,20 +14,20 @@ const projects = [
     category: 'FULL-STACK AI PROJECT',
     year: '2026',
     tags: ['MERN', 'Gemini API', 'REST API'],
-    href: 'https://github.com',
+    href: 'https://notesai-frontend-33fw.onrender.com/login',
     featured: true,
   },
-  // {
-  //   id: 'dashboard',
-  //   title: 'Life Sciences Dashboard',
-  //   image: dashboardImg,
-  //   imageAlt: 'Life Sciences data dashboard showing research trend charts and KPI metrics',
-  //   category: 'DATA VISUALIZATION',
-  //   year: '2024',
-  //   tags: ['Vanilla JS', 'REST API', 'Accessible UI'],
-  //   href: 'https://github.com',
-  //   featured: false,
-  // },
+  {
+    id: 'roots',
+    title: 'Roots Blogging Platform',
+    image: rootsImg,
+    imageAlt: 'Roots full-stack blogging platform showing blog posts and user interface',
+    category: 'FULL-STACK DEVELOPMENT',
+    year: '2026',
+    tags: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'JWT'],
+    href: 'https://roots-blog-client.onrender.com/',
+    featured: false,
+  },
   {
     id: 'portfolio',
     title: 'This Portfolio',
